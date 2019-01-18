@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
-//for functional components, can be useful to export function itself
 export default function PlayerPreview ({ avatar, username, children }) {
   return (
     <div>
