@@ -1,7 +1,5 @@
- var React = require('react');
- var Link = require('react-router-dom').Link;
- //navlink is used to denote active link
- var NavLink = require('react-router-dom').NavLink;
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 //stateless functional component bc contains no state
 
@@ -34,4 +32,4 @@
 
  }
 
- module.exports = Nav;
+ export default Nav

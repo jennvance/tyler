@@ -1,6 +1,6 @@
 const React = require('react');
 const PropTypes = require('prop-types');
-const api = require('../utils/api');
+const { fetchPopularRepos } = require('../utils/api');
 const Loading = require('./Loading');
 
 function SelectLanguage({ selectedLanguage, onSelect }) {
@@ -101,7 +101,7 @@ class Popular extends React.Component {
 		}));
 
 		//AJAX reqs
-		api.fetchPopularRepos(lang)
+		fetchPopularRepos(lang)
 			.then((repos) => {
 				this.setState(() => ({repos}))
 			});
